@@ -134,8 +134,7 @@ class twitch(commands.Cog):
             await ctx.send('Please enter the name of the Twitch streamer.')
             streamer = await self.client.wait_for('message', check=check, timeout=20)
 
-            await ctx.send('Would you like me to setup a stream statistics channel? Like this:')
-            await ctx.send('https://aquahack.pw/u/y2v4h.png')
+            await ctx.send('Would you like me to setup a stream statistics channel?')
             
             vc_channel = await self.client.wait_for('message', check=check, timeout=20)
 
